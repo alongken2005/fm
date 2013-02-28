@@ -1,0 +1,2 @@
+info-2013-01-09 14:45:04 --> fdfdfd
+info-2013-01-09 14:45:50 --> SELECT u.id,u.account,u.channel,u.reg_time,u.last_login_time,u.login_count,r.role_level,r.role_name FROM u_info u LEFT JOIN g_role r ON u.account=r.account ORDER BY id DESC LIMIT 0, 25

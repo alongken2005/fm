@@ -1,0 +1,38 @@
+* { margin: 0; padding: 0; }
+body { font-size: 12px; font-family: tahoma,arial,'微软雅黑' }
+html { }
+ol, ul {list-style: none; }
+a { color: #666; text-decoration: none; out-line: none; }
+a:hover { color: #DC351A; text-decoration: underline; }
+img { border: 0; }
+select { border-radius: 2px; border: 1px solid #e0dfdd; background: #FFF; }
+textarea { overflow: auto; vertical-align: top; }
+.left { float: left; }
+.right { float: right; }
+.clear { clear: both; height: 0; line-height: 0; overflow: hidden; font-size: 0; }
+.clear10 { clear: both; height: 10px; overflow: hidden; font-size: 0; }
+.clearfix{ overflow: hidden; _zoom: 1; }
+
+/*输入框*/
+.input1 { width: 80px; height: 26px; line-height: 26px; background: #FFF; color: #714a3a; font-size: 14px; font-weight: bold; padding: 0 3px; border: 1px solid #e0dfdd; }
+.input2 { width: 180px; height: 26px; line-height: 26px; background: #FFF; color: #714a3a; font-size: 14px; font-weight: bold; padding: 0 3px; border: 1px solid #e0dfdd; }
+.input3 { width: 160px; height: 24px; line-height: 24px; background: #F7F7F7; border: 1px solid #DBDBDB; }
+.input4 { width: 100px; height: 24px; line-height: 24px; background: #F7F7F7; border: 1px solid #DBDBDB; }
+.input5 { width: 240px; height: 24px; line-height: 24px; background: #F7F7F7; border: 1px solid #DBDBDB; }
+.input6 { width: 320px; height: 24px; line-height: 24px; background: #F7F7F7; border: 1px solid #DBDBDB; }
+.input7 { width: 100px; height: 20px; line-height: 20px; background: #F7F7F7; border: 1px solid #DBDBDB; }
+
+.box { width: 1000px; margin: 0 auto; }
+
+.in_header .logo { float: left; font-size: 40px; }
+.in_header .remark { float: left; font-family: '宋体'; color:#929292; }
+
+.pagination { padding: 3px; font-size: 12px; margin-top: 5px; text-align: center;}
+.pagination a { padding: 2px 5px 2px 5px; margin: 2px; border: 1px solid #CCC; text-decoration: none; color:#DC351A;}
+.pagination a:hover, div.pagination a:active { border: 1px solid #DC351A; background-color: #DC351A; color: #FFF; }
+.pagination span.current { padding: 2px 5px 2px 5px; margin: 2px; border: 1px solid #DC351A; font-weight: bold; background-color: #DC351A; color: #FFF; }
+.pagination span.disabled { padding: 2px 5px 2px 5px; margin: 2px; border: 1px solid #EEE; color: #DDD; }
+
+.showmessage { width: 300px; margin: 0 auto; border: 1px solid #8EB3E7; margin-top: 100px; }
+.showmessage h2 { height: 25px; line-height: 25px; background: #4C587D; color: #FFF; font-size: 14px; text-align: center; border-bottom: 1px solid #8EB3E7; }
+.showmessage p { padding: 10px 15px; }
