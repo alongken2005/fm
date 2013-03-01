@@ -24,13 +24,41 @@ function is_email($value) {
 }
 
 /**
- * 写日志
- * @param string $msg
- * @param type $level
- * @param type $filename
+ * 创建文件夹
+ * @param type $path
  */
-function write_log($msg, $level='info', $filename = 'log') {
-	$fname = $filename == 'log' ? 'log-'.date('Y-m-d') : $filename;
+function createFolder($path) {
+	if (!file_exists($path)) {
+		createFolder(dirname($path));
+		mkdir($path, 0777);
+	}
+ }
+
+ /**
+  * 日志
+  * @param string $msg	内容
+  * @param type $level	说明
+  * @param type $filename  文件前缀
+  * @param type $cf  是否每天生成一个文件
+  */
+ function write_log($msg, $level='info', $filename = 'ci', $cf = true) {
+	$fname = $cf == true ? $filename.date('-Y-m-d') : $filename;
 	$msg = $level.'-'.date('Y-m-d H:i:s'). ' --> '.$msg."\r\n";
-	file_put_contents(APPPATH.'logs/'.$fname.'.log', $msg, FILE_APPEND);
+	file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logs/'.$fname.'.log', $msg, FILE_APPEND);
+}
+
+/**
+ * 获取缩略图
+ * @param type $picUrl
+ * @return type
+ */
+function get_thumb($picUrl, $baseUrl = './data/uploads/mood/') {
+	if(!$picUrl) return false;
+	$cover = pathinfo($picUrl);
+	$thumbUrl = $baseUrl.$cover['dirname'].'/'.$cover['filename'].'_thumb.'.$cover['extension'];
+	if(file_exists($thumbUrl)) {
+		return $thumbUrl;
+	} else {
+		return $baseUrl.$picUrl;
+	}
 }

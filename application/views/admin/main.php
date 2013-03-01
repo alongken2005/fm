@@ -47,16 +47,7 @@
 			<div title="数据统计">
 				<ul>
 					<li>
-						<a href="<?=site_url('admin/dataview/reg_list')?>" class="add_tab" tabid="home">注册清单</a>
-					</li>
-					<li>
-						<a href="<?=site_url('admin/dataview/reg_tj')?>" class="add_tab">注册统计</a>
-					</li>
-					<li>
-						<a href="<?=site_url('admin/dataview/sell_list')?>" class="add_tab">销售清单</a>
-					</li>
-					<li>
-						<a href="<?=site_url('admin/dataview/sell_tj')?>" class="add_tab">销售统计</a>
+						<a href="<?=site_url('admin/mood/lists')?>" class="add_tab" tabid="home">心情电台</a>
 					</li>
 				</ul>
 			</div>

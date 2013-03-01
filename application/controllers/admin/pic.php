@@ -78,7 +78,7 @@ class Pic extends CI_Controller
 
 				$this->load->library('upload', $config);
 
-				if(!$this->upload->do_upload()) {
+				if(!$this->upload->do_upload('pic')) {
 					$this->_data['upload_err'] = $this->upload->display_errors();
 					$this->load->view('admin/pic_op', $this->_data);
 				}

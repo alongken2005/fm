@@ -1,6 +1,6 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 //基础url
-$config['base_url']	= 'http://www.fm.com/';
+$config['base_url']	= 'http://localhost/fm/';
 
 //当前皮肤主题
 define('THEME', 'default');

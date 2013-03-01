@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 $this->load->view('admin/header');
 ?>
-<h2><?=isset($tid) ? $contType[$tid] : ''?>管理</h2>
+<h2>心情电台管理<div class="operate"><a href="<?=site_url('admin/mood/op')?>">添加</a></div></h2>
 <table cellpadding="0" cellspacing="0" border="0" class="table2">
 	<tr>
 		<th>标题</th>
@@ -13,8 +13,8 @@ $this->load->view('admin/header');
 		<td style="text-align: left; padding-left: 10px"><?=$v['title']?></td>
 		<td><?=date('Y-m-d H:i', $v['ctime'])?></td>
 		<td>
-			<a href="<?=site_url('admin/content/op?cid='.$v['cid'])?>">修改</a>
-			<a href="<?=site_url('admin/content/del?cid='.$v['cid'])?>" class="del">删除</a>
+			<a href="<?=site_url('admin/mood/op?id='.$v['id'])?>">修改</a>
+			<a href="<?=site_url('admin/mood/del?id='.$v['id'])?>" class="del">删除</a>
 		</td>
 	</tr>
 <?php endforeach; endif;?>
