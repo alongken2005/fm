@@ -1,9 +1,9 @@
 * { margin: 0; padding: 0; }
-body { font-size: 12px; font-family: tahoma,arial,'微软雅黑' }
+body { font-size: 12px; font-family: "微软雅黑","Microsoft Yahei",Arial,Helvetica,"宋体" }
 html { }
 ol, ul {list-style: none; }
 a { color: #666; text-decoration: none; out-line: none; }
-a:hover { color: #DC351A; text-decoration: underline; }
+a:hover { color: #506B8F; text-decoration: none; }
 img { border: 0; }
 select { border-radius: 2px; border: 1px solid #e0dfdd; background: #FFF; }
 textarea { overflow: auto; vertical-align: top; }
@@ -14,18 +14,18 @@ textarea { overflow: auto; vertical-align: top; }
 .clearfix{ overflow: hidden; _zoom: 1; }
 
 /*输入框*/
-.input1 { width: 80px; height: 26px; line-height: 26px; background: #FFF; color: #714a3a; font-size: 14px; font-weight: bold; padding: 0 3px; border: 1px solid #e0dfdd; }
-.input2 { width: 180px; height: 26px; line-height: 26px; background: #FFF; color: #714a3a; font-size: 14px; font-weight: bold; padding: 0 3px; border: 1px solid #e0dfdd; }
-.input3 { width: 160px; height: 24px; line-height: 24px; background: #F7F7F7; border: 1px solid #DBDBDB; }
-.input4 { width: 100px; height: 24px; line-height: 24px; background: #F7F7F7; border: 1px solid #DBDBDB; }
-.input5 { width: 240px; height: 24px; line-height: 24px; background: #F7F7F7; border: 1px solid #DBDBDB; }
-.input6 { width: 320px; height: 24px; line-height: 24px; background: #F7F7F7; border: 1px solid #DBDBDB; }
-.input7 { width: 100px; height: 20px; line-height: 20px; background: #F7F7F7; border: 1px solid #DBDBDB; }
+.in_btn { width: 185px; padding: 3px 0; background: #F0EFEF; float: left; text-align: center; }
 
-.box { width: 1000px; margin: 0 auto; }
+.box_s { width: 400px; margin: 0 auto; overflow: hidden; zoom: 1; }
+.box { width: 1000px; margin: 0 auto; overflow: hidden; zoom: 1; }
 
-.in_header .logo { float: left; font-size: 40px; }
-.in_header .remark { float: left; font-family: '宋体'; color:#929292; }
+.in_header { padding-top: 50px; padding-bottom: 15px; margin-bottom: 100px; border-bottom: 5px solid #CCC; }
+.in_header .logo { float: left; font-size: 44px; margin-right: 20px; }
+.in_header .remark { float: right; font-family: '宋体'; color:#929292; margin-top: 12px; }
+.in_header .weburl { float:right; color:#000; font-size: 24px; font-weight: 600; }
+.in_header .weburl span { color: #8C8C8D; }
+
+.in_info { color: #808080; margin: 15px 0 50px 0; }
 
 .pagination { padding: 3px; font-size: 12px; margin-top: 5px; text-align: center;}
 .pagination a { padding: 2px 5px 2px 5px; margin: 2px; border: 1px solid #CCC; text-decoration: none; color:#DC351A;}

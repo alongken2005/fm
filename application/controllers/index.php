@@ -19,4 +19,18 @@ class Index extends CI_Controller {
 	public function index() {
 		$this->load->view(THEME.'/index', $this->_data);
 	}
+
+	/**
+	 * 心情电台
+	 */
+	public function mood() {
+		$this->load->view(THEME.'/mood', $this->_data);
+	}
+
+	/**
+	 * 倾听者
+	 */
+	public function listener() {
+		$this->load->view(THEME.'/listener', $this->_data);
+	}
 }
