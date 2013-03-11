@@ -67,7 +67,7 @@ class Pic extends CI_Controller
 			$deal_data['sort']		= $this->input->post('sort');
 			$deal_data['url']		= $this->input->post('url');
 
-			if($_FILES['userfile']['size'] > 0) {
+			if($_FILES['pic']['size'] > 0) {
 				$config['upload_path']		= './data/uploads/pics';
 				$config['allowed_types']	= 'gif|jpg|png';
 				$config['max_size']			= '5000';
