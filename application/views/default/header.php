@@ -8,9 +8,13 @@
 <body>
 <div class="box">
 	<div class="header">
-		<div class="box_s">
+		<div class="left">
 			<div class="logo">米兰电台</div>
-			<div class="remark">让沟通温暖心灵，感知生活</div><br>
 			<div class="weburl">Milan<span>RS</span>.com</div>
+		</div>
+		<div class="right">
+			<a href="<?=site_url()?>">电台首页</a>
+			<a href="<?=site_url('index/listener')?>">倾听者</a>
+			<a href="<?=site_url('index/mood')?>">心情电台</a>
 		</div>
 	</div>

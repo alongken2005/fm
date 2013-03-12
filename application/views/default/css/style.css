@@ -27,6 +27,14 @@ textarea { overflow: auto; vertical-align: top; }
 
 .in_info { color: #808080; margin: 15px 0 50px 0; }
 
+.header { padding-top: 30px; }
+.header .right a { float: left; width: 115px; height: 25px; line-height: 25px; text-align: center; border-left: 1px solid #FFF; background: #F0EFEF; }
+.header .right a:hover { background: #DEDEDE; }
+.header .logo { font-size: 35px; }
+.header .weburl { font-size: 16px; font-weight: 600; }
+.header .weburl span { color: #8C8C8D; }
+
+
 .pagination { padding: 3px; font-size: 12px; margin-top: 5px; text-align: center;}
 .pagination a { padding: 2px 5px 2px 5px; margin: 2px; border: 1px solid #CCC; text-decoration: none; color:#DC351A;}
 .pagination a:hover, div.pagination a:active { border: 1px solid #DC351A; background-color: #DC351A; color: #FFF; }
